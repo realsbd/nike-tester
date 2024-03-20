@@ -9,9 +9,9 @@ const About = () => {
  }, [])
   return (
     <>
-<div className="whole1 p-3 flex flex-wrap text-black bg-cover bg-center" style={{ backgroundImage: "url('')" }}>
+<div className="whole1 p-3 flex flex-wrap text-black bg-cover bg-center " style={{ backgroundImage: "url('')" }}>
     <div>
-        <h1 className="text-3xl font-bold p-2">About Us</h1>
+        <h1 className="text-3xl font-bold p-2 mt-20">About Us</h1>
         <h1 className="p-2" data-aos="fade-up" data-aos-duration="1000">
             Your ally in achieving ambition <br />
             beyond borders
@@ -26,7 +26,7 @@ const About = () => {
         </p>
     </div>
     <div>
-        <img className='rounded-xl' src="https://i.pinimg.com/564x/53/f6/f3/53f6f33e968d9f75aeaa8e8f81ef9221.jpg" alt="" style={{width:'500px', height:'60vh'}} />
+        <img className='rounded-xl mt-20' src="https://i.pinimg.com/564x/53/f6/f3/53f6f33e968d9f75aeaa8e8f81ef9221.jpg" alt="" style={{width:'500px', height:'60vh'}} />
     </div>
 </div>
 
