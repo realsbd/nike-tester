@@ -11,16 +11,17 @@ const Landingpage = () => {
     <>
 
 <div className="flex flex-col justify-center items-center min-h-screen bg-cover bg-center" style={{backgroundImage: "url('https://i.pinimg.com/564x/b8/c6/38/b8c6385fa1ec61bf8f26172f8d5f65e0.jpg')"}}>
-  <div className="text-center p-5 bg-black bg-opacity-50  backdrop-filter backdrop-blur-lg rounded-xl">
-    <h1 className="text-3xl font-bold text-white mb-4">
-      Get the Green Light!
-    </h1>
-    <p className="text-white">
-      Join the Nike Product Tester Program and be the first to try out our latest innovations. <br />
-      Help shape the future of athletic footwear by providing valuable feedback on our products.
-    </p>
-    <a href="#" className="bg-white p-5 hover:bg-green-600 text-black font-bold rounded mt-4 inline-block">Apply to be a Tester</a>
-  </div>
+<div className="text-center p-5 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-xl w-80">
+  <h1 className="text-3xl font-bold text-white mb-4">
+    Get the Green Light!
+  </h1>
+  <p className="text-white">
+    Join the Nike Product Tester Program and be the first to try out our latest innovations. <br />
+    Help shape the future of athletic footwear by providing valuable feedback on our products.
+  </p>
+  <a href="#" className="bg-white p-5 hover:bg-green-600 text-black font-bold rounded mt-4 inline-block">Apply to be a Tester</a>
+</div>
+
 </div>
     <div> 
     </div>
