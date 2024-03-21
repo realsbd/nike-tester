@@ -37,7 +37,7 @@ const MyFooter = () => {
             </div>
 
               <h5>Subscribe to More Info</h5>
-            <div className='flex gap-3 mb-4'>
+            <div className='flex gap-1 mb-4'>
               <input className="rounded" type="text" placeholder="Enter Your Email" />
               <button className="p-2 bg-gray-600 rounded-xl font-bold">Subscribe</button>
             </div>
