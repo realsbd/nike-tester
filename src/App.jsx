@@ -4,6 +4,7 @@ import './App.css'
 import MyNavbar from './components/Navbar'
 import About from './pages/About'
 import Landingpage from './pages/Landingpage'
+import Apply from './pages/Apply'
 
 function App() {
  
@@ -13,7 +14,8 @@ function App() {
     <MyNavbar/>
     <Routes>
       <Route path='/' element={ <Landingpage/>}/>
-      <Route path='about' element={<About/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/apply' element={<Apply/>}/>
     </Routes>
     
     </>

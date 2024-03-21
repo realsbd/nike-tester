@@ -11,17 +11,18 @@ const About = () => {
     <>
 <div className="whole1 p-3 flex flex-wrap text-black bg-cover bg-center " style={{ backgroundImage: "url('')" }}>
     <div>
-        <h1 className="text-3xl font-bold p-2 mt-20">About Us</h1>
+        <h1 className="text-3xl font-bold p-2 mt-20">Welcome  Testers</h1>
         <h1 className="p-2" data-aos="fade-up" data-aos-duration="1000">
-            Your ally in achieving ambition <br />
-            beyond borders
+        Hey there, fellow Tester! Welcome to Nike's exclusive <br /> space where innovation meets feedback, and testers like you play a pivotal role in shaping the future
         </h1>
         <p className="p-2" data-aos="fade-up" data-aos-duration="1000">
-            We understand that with global ambition, comes global challenges, and
-            we are <br />
-            here to bridge the gap by offering seamless cross-border financial
-            services. <br />
-            Consider us your friendly digital guide to all things finance, helping
+        You're not just a tester; you're an essential part of the Nike family. <br />
+         Together, we form a vibrant community of athletes, enthusiasts, <br />
+         and innovators united by our passion <br />
+       
+         for pushing boundaries and driving progress. <br /> Your insights, feedback, and experiences are what drive us forward every day.
+           <br />
+            Consider us your friendly digital guide <br /> to all things finance, helping
             you make the most of your money.
         </p>
     </div>

@@ -27,10 +27,9 @@ const Karousel = () => {
           </Carousel>
         </div>
         <div className="text-center h-full flex flex-col justify-center"  data-aos="fade-up" data-aos-duration="1000">
-          <h2 className="text-3xl font-bold mb-4">Lorem Ipsum</h2>
+          <h2 className="text-3xl font-bold mb-4">Introducing Nike's Product Showcase</h2>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet risus vitae fermentum consectetur.
-            Nulla facilisi. Vestibulum maximus libero id fringilla condimentum. Nulla facilisi.
+          Step into the world of Nike's Product Showcase, where innovation meets style and performance. Alongside our dynamic carousel, offering a glimpse into the diverse range of products, you'll discover an array of offerings designed to elevate your athletic experience.
           </p>
         </div>
       </div>
