@@ -20,10 +20,7 @@ const About = () => {
          Together, we form a vibrant community of athletes, enthusiasts, <br />
          and innovators united by our passion <br />
        
-         for pushing boundaries and driving progress. <br /> Your insights, feedback, and experiences are what drive us forward every day.
-           <br />
-            Consider us your friendly digital guide <br /> to all things finance, helping
-            you make the most of your money.
+         for pushing boundaries and driving progress. <br /> 
         </p>
     </div>
     <div>
