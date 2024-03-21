@@ -36,7 +36,7 @@ const About = () => {
         <div>
         <h1 className="text-3xl font-bold p-2" data-aos="fade-up" data-aos-duration="1000">About Us</h1>
         <p className="p-2 " data-aos="fade-up" data-aos-duration="1000">
-            Welcome to [Your Company Name], your trusted partner in product testing and market research. 
+            Welcome to Nike, your trusted partner in product testing and market research. 
             As a Tester with us, you have the opportunity to get paid for carrying out fiscal market research 
             and submitting sample reports on the quality of consumer products and services, including shoes, 
             clothes, and various accessories.
@@ -56,7 +56,7 @@ const About = () => {
         </p>
         <h2 className="font-bold text-xl p-2" data-aos="fade-up" data-aos-duration="1000">Assignment and Compensation:</h2>
         <p className="p-2">
-            At [Your Company Name], we believe in the power of consumer feedback to drive product innovation 
+            At Nike, we believe in the power of consumer feedback to drive product innovation 
             and improve customer experiences. That's why we compensate you for your time and participation 
             in our testing programs. By sharing your opinions, you play a crucial role in helping companies 
             develop new products or services and enhance existing ones.
