@@ -86,7 +86,7 @@ const MyNavbar = () => {
       </div>
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link to={'/'}>
+        <Link to={'/'}>
             <a
               href="#"
               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -102,24 +102,15 @@ const MyNavbar = () => {
              About
             </a>
           </Link>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-          >
-            Services
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-          >
-            Pricing
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-          >
-            Contact
-          </a>
+
+          <Link to={'/apply'}>
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Apply Here
+              </a>
+              </Link>
         </div>
       </div>
     </nav>
