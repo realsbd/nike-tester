@@ -36,14 +36,14 @@ const MyFooter = () => {
               </ul>
             </div>
 
-            <div>
               <h5>Subscribe to More Info</h5>
+            <div className='flex gap-3 mb-4'>
               <input className="rounded" type="text" placeholder="Enter Your Email" />
-              <button className="btn btn-warning font-bold text-white mt-2">Subscribe</button>
+              <button className="p-2 bg-gray-600 rounded-xl font-bold">Subscribe</button>
             </div>
           </div>
           <hr />
-          <p className="text-center">Copyright @ Aspire Dev Hub</p>
+          <p className="text-center mt-4">Copyright @ Aspire Dev Hub</p>
         </div>
       </footer>
     </>
