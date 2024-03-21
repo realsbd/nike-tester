@@ -11,8 +11,8 @@ const Landingpage = () => {
     <>
 
 <div className="flex flex-col justify-center items-center min-h-screen bg-cover bg-center" style={{backgroundImage: "url('https://i.pinimg.com/564x/b8/c6/38/b8c6385fa1ec61bf8f26172f8d5f65e0.jpg')"}}>
-<div className="text-center p-5 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-xl w-80">
-  <h1 className="text-3xl font-bold text-white mb-4">
+<div className="text-center p-5 bg-black bg-opacity-50 mt-20 backdrop-filter backdrop-blur-lg rounded-xl w-80">
+  <h1 className="text-3xl font-bold text-white">
     Get the Green Light!
   </h1>
   <p className="text-white">

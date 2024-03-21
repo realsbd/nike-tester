@@ -14,8 +14,8 @@ const MyFooter = () => {
             </div>
 
             <div className="text-warning">
-              <h5>Contact Us</h5>
-              <a href="https://www.linkedin.com/in/jinadtope/" className="btn btn-warning btn-floating mx-1" target="_blank" rel="noopener noreferrer">
+          
+              <a href="" className="btn btn-warning btn-floating mx-1" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
               </a>
               <button className="btn btn-warning btn-floating mx-1">
@@ -25,25 +25,7 @@ const MyFooter = () => {
                 <i className="fab fa-whatsapp"></i>
               </button>
             </div>
-
-            <div>
-              <h5>Helpful Links</h5>
-              <ul>
-                <li>Services</li>
-                <li>Support</li>
-                <li>Privacy Policy</li>
-                <li>Terms and condition</li>
-              </ul>
             </div>
-
-              <h5>Subscribe to More Info</h5>
-            <div className='flex gap-1 mb-4'>
-              <input className="rounded" type="text" placeholder="Enter Your Email" />
-              <button className="p-2 bg-gray-600 rounded-xl font-bold">Subscribe</button>
-            </div>
-          </div>
-          <hr />
-          <p className="text-center mt-4">Copyright @ Aspire Dev Hub</p>
         </div>
       </footer>
     </>
