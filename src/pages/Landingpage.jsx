@@ -18,7 +18,7 @@ const Landingpage = () => {
     Help shape the future of athletic footwear by providing valuable feedback on our products.
   </p>
   <Link to={'/apply'}>
-  <a href="#" className="bg-white p-5 hover:bg-red-600 hover:text-emerald-100 text-black font-bold rounded mt-4 inline-block">Apply to be a Tester</a>
+  <a href="#" className="bg-white p-5 hover:bg-red-600 hover:text-white text-black font-bold rounded mt-4 inline-block">Apply to be a Tester</a>
   </Link>
 </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import myImageone from '../assets/cropped-nikeproducttesting.png'
+
 
 const Apply = () => {
   return (
@@ -9,6 +9,7 @@ const Apply = () => {
 
         <iframe
       title="Nike Product Order Form"
+      className='mb-5'
       src="https://form.jotform.com/240826909263260"
       style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
       scrolling="no"
