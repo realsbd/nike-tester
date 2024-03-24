@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import myImageone from '../assets/cropped-nikeproducttesting.png'
 
 const MyNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,13 @@ const MyNavbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
+            <Link to={'/'}>
             <img
-              className="w-10 rounded-xl"
-              src="https://i.pinimg.com/564x/bd/d5/51/bdd551490e97ebcbd21b72ba10c348eb.jpg"
+              className="rounded w-20"
+              src={myImageone}
               alt=""
             />
+              </Link>
             <h3 className="text-xl font-bold text-red-300"></h3>
           </div>
           <div className="hidden md:block">

@@ -1,4 +1,5 @@
 import React from 'react'
+import myImageone from '../assets/cropped-nikeproducttesting.png'
 
 const MyFooter = () => {
   return (
@@ -7,7 +8,7 @@ const MyFooter = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="text-warning">
-              <img style={{ height: "50px" }} src="https://i.pinimg.com/564x/bd/d5/51/bdd551490e97ebcbd21b72ba10c348eb.jpg" alt="" />
+              <img style={{ height: "50px" }} src={myImageone} className='rounded  w-20' alt="" />
               <p className="font-bold">Nike..</p>
               <br />
               <p>Begin testing today</p>

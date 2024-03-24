@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import MyFooter from '../components/Footer';
+import { Link } from 'react-router-dom';
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -73,7 +74,9 @@ const About = () => {
     </div>        
         </div>
       <div className="flex justify-center">
+        <Link to={'/apply'}>
   <button className='bg-green-400 p-5 rounded-xl text-white w-52 font-bold'>Apply Now</button>
+        </Link>
 </div>
       </div>
      <MyFooter/>

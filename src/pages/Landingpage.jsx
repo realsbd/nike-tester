@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Accodion from '../components/Accodion';
 import Karousel from '../components/Carousel';
-import MyCards from '../components/MyCards';
-import { Carousel } from 'flowbite-react';
 import MyFooter from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const Landingpage = () => {
   return (
@@ -19,7 +17,9 @@ const Landingpage = () => {
     Join the Nike Product Tester Program and be the first to try out our latest innovations. <br />
     Help shape the future of athletic footwear by providing valuable feedback on our products.
   </p>
+  <Link to={'/apply'}>
   <a href="#" className="bg-white p-5 hover:bg-red-600 hover:text-emerald-100 text-black font-bold rounded mt-4 inline-block">Apply to be a Tester</a>
+  </Link>
 </div>
 
 </div>
@@ -33,7 +33,7 @@ const Landingpage = () => {
     <span className='text-blue-400 font-bold'>Nike Product Testing </span> usually takes 1 to 3 weeks for you to receive a response from the program coordinators. If accepted, you will be notified via email and Nike will periodically send invitations to participate in one of their product testings. Testers are asked to wear the shoes and give their input on how the product feels, acts and performs.
    </p>
     </div>
-
+    
     <MyFooter/>
     </>
   );
