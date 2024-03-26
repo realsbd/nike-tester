@@ -25,14 +25,7 @@ const Accodion = () => {
                   evolution.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Check out our about page
-                  <a
-                    href="https://flowbite.com/docs/getting-started/introduction/"
-                    className="text-cyan-600 hover:underline dark:text-cyan-500"
-                  >
-                    to get started
-                  </a>
-                  and start earning rewards today!
+                  Check out our about page to <a href="/apply" className="text-cyan-600 hover:underline dark:text-cyan-500"> get started </a> and start earning rewards today!
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
