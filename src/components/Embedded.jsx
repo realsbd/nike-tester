@@ -68,8 +68,8 @@ const Embedded = () => {
           <label className="block text-gray-700" htmlFor="message">Message</label>
           <textarea id="message" name="message" rows="4" className="mt-1 p-3 block w-full border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
         </div>
-        <div className="mt-6">
-          <button type="submit" className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600">Send</button>
+        <div className="mt-6 mb-5">
+          <button type="submit" className="bg-blue-500 text-white p-3 rounded-md w-100 hover:bg-blue-600">Send</button>
         </div>
       </form>
     </div>
