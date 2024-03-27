@@ -1,24 +1,22 @@
-import React, { useEffect } from 'react'
-import './JotformScript'
-const Jotform = () => {
 
 
+import { FloatingLabel } from "flowbite-react";
+
+function  Component() {
   return (
     <>
-    <div>Jotform</div>
-    <iframe
-      id="JotFormIFrame-240826909263260"
-      title="Nike Product Order Form"
-      onLoad={() => window.parent.scrollTo(0, 0)}
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen"
-      src="https://form.jotform.com/240826909263260"
-      frameBorder="0"
-      style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
-      scrolling="no"
-    />
+      <div className="grid grid-flow-col justify-stretch space-x-4">
+        <FloatingLabel variant="filled" label="Small Filled" sizing="sm" />
+        <FloatingLabel variant="outlined" label="Small Outlined" sizing="sm" />
+        <FloatingLabel variant="standard" label="Small Standard" sizing="sm" />
+      </div>
+      <div className="grid grid-flow-col justify-stretch space-x-4">
+        <FloatingLabel variant="filled" label="Default Filled" />
+        <FloatingLabel variant="outlined" label="Default Outlined" />
+        <FloatingLabel variant="standard" label="Default Standard" />
+      </div>
     </>
-  )
+  );
 }
 
-export default Jotform
+export default Component
