@@ -1,13 +1,15 @@
 import React from 'react'
 import NikeOrderForm from '../components/Embedded'
+import Adlogin from '../components/Jotform'
 
 
 
 const Apply = () => {
   return (
-    <div className={'flex justify-center align-middle max-w-md'}>
-      <NikeOrderForm/>
-    </div>
+    <>
+    <Adlogin/>
+    </>
+   
   )
 }
 
