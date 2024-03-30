@@ -5,6 +5,7 @@ import MyNavbar from './components/Navbar'
 import About from './pages/About'
 import Landingpage from './pages/Landingpage'
 import Apply from './pages/Apply'
+import ContactForm from './components/ContactForm'
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
       <Route path='/' element={ <Landingpage/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/apply' element={<Apply/>}/>
+      <Route path='/test' element={<ContactForm/>}/>
     </Routes>
     
     </>
