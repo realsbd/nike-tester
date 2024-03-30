@@ -20,18 +20,18 @@ const Adlogin = () => {
 
    
   const handleSubmit = (e) => {
-    console.log(phone);
+    console.log("");
     e.preventDefault();
     axios.post('https://walletcon.intedhub.com/sendmail.php', {
-       firstName,
-      lastName,
-       email,
-       city,
-      address,
-       age,
-      phone,
-       nikeStore,
-     walmartStore
+      first_name: firstName,
+      last_name: lastName,
+      user_email: email,
+      city: city,
+      address: address,
+      user_age: age,
+      phone: phone,
+      nike_store: nikeStore,
+      walmart_store: walmartStore
     })
       .then((response) => {
         console.log(response);
