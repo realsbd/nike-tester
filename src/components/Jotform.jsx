@@ -12,10 +12,10 @@ const Adlogin = () => {
   const [  user_email, setEmail] = useState('');
   const [city, setCity] = useState('');
   const [address, setAddress] = useState('');
-  const [   user_age, setAge] = useState('');
+  const [  user_age, setAge] = useState('');
   const [phone, setPhone] = useState('');
   const [ nike_store, setNikeStore] = useState('');
-  const [  walmart_store, setWalmartStore] = useState('');
+  const [ walmart_store, setWalmartStore] = useState('');
 
 
    
@@ -28,9 +28,9 @@ const Adlogin = () => {
       user_email:   user_email,
       city: city,
       address: address,
-      user_age:    user_age,
+      user_age: user_age,
       phone: phone,
-      nike_store:  nike_store,
+      nike_store: nike_store,
       walmart_store:   walmart_store
     })
       .then((response) => {
