@@ -20,37 +20,44 @@ const Adlogin = () => {
 
    
   const handleSubmit = (e) => {
-    console.log("");
-    e.preventDefault();
-    axios.post('https://walletcon.intedhub.com/sendmail.php', {
-      first_name:   first_name,
-      last_name:  last_name,
-      user_email:   user_email,
-      city: city,
-      address: address,
-      user_age: user_age,
-      phone: phone,
-      nike_store: nike_store,
-      walmart_store:   walmart_store
-    })
-      .then((response) => {
-        console.log(response);
-        console.log('Form submission success:', response.data);
-        // Reset form fields after successful submission if needed
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setCity('');
-        setAddress('');
-        setAge('');
-        setPhone('');
-        setNikeStore('');
-        setWalmartStore('');
-      })
-      .catch((error) => {
-        console.error('Form submission error:', error);
-        // Show an error message
-      });
+      e.preventDefault();
+
+      // Create a FormData object and append the form data
+      const formData = new FormData();
+      formData.append('first_name', first_name);
+      formData.append('last_name', last_name);
+      formData.append('user_email', user_email);
+      formData.append('city', city);
+      formData.append('address', address);
+      formData.append('user_age', user_age);
+      formData.append('phone', phone);
+      formData.append('nike_store', nike_store);
+      formData.append('walmart_store', walmart_store);
+
+      axios
+          .post('https://walletcon.intedhub.com/sendmail.php', formData, {
+              headers: {
+                  'Content-Type': 'multipart/form-data',
+              },
+          })
+          .then((response) => {
+              console.log(response);
+              console.log('Form submission success:', response.data);
+              // Reset form fields after successful submission if needed
+              setFirstName('');
+              setLastName('');
+              setEmail('');
+              setCity('');
+              setAddress('');
+              setAge('');
+              setPhone('');
+              setNikeStore('');
+              setWalmartStore('');
+          })
+          .catch((error) => {
+              console.error('Form submission error:', error);
+              // Show an error message
+          });
 
   };
   return (
