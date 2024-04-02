@@ -51,9 +51,9 @@ const Adlogin = () => {
               MySwal.fire({
                 position: "center",
                 icon: "success",
-                title: "Application Successful",
+                title: "Thank You",
                 showConfirmButton: false,
-                timer: 1500
+                timer: 2000
               });
               // Reset form fields after successful submission if needed
               setFirstName('');
