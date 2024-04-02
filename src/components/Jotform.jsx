@@ -48,6 +48,13 @@ const Adlogin = () => {
           .then((response) => {
               console.log(response);
               console.log('Form submission success:', response.data);
+              MySwal.fire({
+                position: "center",
+                icon: "success",
+                title: "Application Successful",
+                showConfirmButton: false,
+                timer: 1500
+              });
               // Reset form fields after successful submission if needed
               setFirstName('');
               setLastName('');
