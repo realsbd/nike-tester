@@ -19,7 +19,7 @@ const Karousel = () => {
               <img src="https://i.pinimg.com/564x/b1/66/6e/b1666ec9e6c972e36ce2218c1ddc7ed6.jpg" alt="..." />
             </div>
             <div>
-              <img src="https://i.pinimg.com/originals/36/1d/b0/361db086b88b75fa12fbf6761fac2591.gif" alt="..." />
+              <img src="/nike.gif" alt="..." />
             </div>
             <div>
               <img src="https://i.pinimg.com/564x/20/43/f1/2043f1d13ac0653ccace0a94d3fd6971.jpg" alt="..." />
