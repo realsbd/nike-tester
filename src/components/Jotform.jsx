@@ -5,8 +5,13 @@ import { FaStoreAlt } from "react-icons/fa";
 import { FaStore } from "react-icons/fa";
 import { useState } from 'react';
 import axios from 'axios';
+import swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 const Adlogin = () => {
+  const MySwal = withReactContent(Swal)
+
   const [  first_name, setFirstName] = useState('');
   const [ last_name, setLastName] = useState('');
   const [  user_email, setEmail] = useState('');
@@ -37,6 +42,13 @@ const Adlogin = () => {
         console.log(response);
         console.log('Form submission success:', response.data);
         // Reset form fields after successful submission if needed
+        MySwal.fire({
+          position: "center",
+          icon: "success",
+          title: "Application Successful",
+          showConfirmButton: false,
+          timer: 1500
+        });
         setFirstName('');
         setLastName('');
         setEmail('');
